@@ -516,7 +516,8 @@ Featured Tours
 
 .tour-img{
   height: 15rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tour-date{
@@ -633,6 +634,22 @@ Contact
   border: transparent;
 }
 
+.form-control::-webkit-input-placeholder{
+  color: inherit;
+}
+
+.form-control::-moz-placeholder{
+  color: inherit;
+}
+
+.form-control:-ms-input-placeholder{
+  color: inherit;
+}
+
+.form-control::-ms-input-placeholder{
+  color: inherit;
+}
+
 .form-control::placeholder{
   color: inherit;
 }
@@ -696,7 +713,8 @@ Gallery
 .gallery-img{
   /* in situations when you don't have cropped images, we set up height and object fit */
   height: 17rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 
   transition: var(--transition);
 }
